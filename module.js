@@ -1,13 +1,4 @@
 import app from 'app';
-import esigPopupService from 'js/esigPopupService';
+import * as esigSvc from 'js/esigPopupService';
 
-/**
- * Initializes the e-signature module and registers the service.
- */
-export function initialize() {
-    app.factory('esigPopupService', esigPopupService);
-}
-
-export default {
-    initialize
-};
+app.factory( 'esigPopupService', () => esigSvc );
