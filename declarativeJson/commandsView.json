@@ -1,0 +1,11 @@
+{
+  "commands": [
+    {
+      "id": "esigPopupCommand",
+      "title": "Open e-signature dialog",
+      "iconId": "miscInfo",
+      "action": "esigPopupService.showPopup",
+      "visible": true
+    }
+  ]
+}
