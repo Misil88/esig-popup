@@ -1,11 +1,20 @@
 {
   "commands": [
     {
-      "id": "esigPopupCommand",
-      "title": "Open e-signature dialog",
-      "iconId": "miscInfo",
-      "action": "esigPopupService.showPopup",
-      "visible": true
+      "commandId": "myCompany.esigPopup",
+      "className": "esigPopupService.openEsigPopup",
+      "title": "Approve (MFA)",
+      "description": "Sign-off with fresh Azure AD authentication",
+      "image": "cmdSignOff16.svg"
+    }
+  ],
+  "commandPlacements": [
+    {
+      "id": "myCompany.esigPopupPlacement",
+      "uiAnchor": "Awp0SignoffCommand",          // Replace the stock button
+      "uiAnchorPosition": "REPLACE",
+      "commandId": "myCompany.esigPopup",
+      "priority": 100
     }
   ]
 }
